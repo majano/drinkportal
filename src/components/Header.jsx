@@ -1,19 +1,21 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
+
 import userPicture from '../assets/img/user.png';
-import logo from '../assets/img/logo.svg';
+import logo from '../assets/img/logo.svg'; 
 
 function Header() {
     return (
         <div className="header">
             <div className="logo"><img src={logo} alt=""/></div>
-            <div className="nav">
+            <div className="nav"> 
                 <ul>
-                    <li className="active">Highlights</li>
-                    <li>Insights</li>
-                    <li>Portfolio</li>
-                    <li>Team</li>
-                    <li>Social</li>
-                </ul>
+                    <li><NavLink to="/highlights" activeClassName="active">Highlights</NavLink></li>
+                    <li><NavLink to="/insights">Insights</NavLink></li>
+                    <li><NavLink to="/portfolio">Portfolio</NavLink></li>
+                    <li><NavLink to="/team">Team</NavLink></li>
+                    <li><NavLink to="/social">Social</NavLink></li>
+                </ul>                      
             </div>
             <div className="nav_secondary">
                 <div className="search_bar">

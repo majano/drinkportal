@@ -41,7 +41,7 @@ h6 {
 }
 p {
   margin: 0 0 1em;
-  line-height: 1.2;
+  line-height: 1.5;
 }
 ul {
   margin: 0;
@@ -71,21 +71,29 @@ ul {
   position: sticky;
   top: 0;
   z-index: 10;
-}
+} 
 .header .nav ul {
   display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
 }
-.header .nav li {
-  border-bottom: 3px solid transparent;
-  line-height: 60px;
+.header .nav li {  
+  line-height: 60px;    
+}
+.header .nav a {
+  color: var(--dark-color);
+  text-decoration: none;
+  display: block;
   padding: 0 20px;
+  border-bottom: 3px solid transparent;
   font-weight: 500;
 }
-.header .nav li.active {
+.header .nav a.active {
   border-bottom-color: var(--primary-color);
+  color: var(--primary-color);
+}
+.header .nav a:hover {
   color: var(--primary-color);
 }
 .header .nav_secondary {
